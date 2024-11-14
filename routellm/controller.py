@@ -167,4 +167,4 @@ class Controller:
         kwargs["model"] = self._get_routed_model_for_completion(
             kwargs["messages"], router, threshold
         )
-        return await acompletion(api_base=self.api_base, api_key=self.api_key, **kwargs)
+        return await acompletion(api_base=self.api_base, api_key=self.api_key, drop_params=True, **kwargs)
