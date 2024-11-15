@@ -91,8 +91,8 @@ def load_config():
         'classifier_config': {
             'label_tokens': ["[[1]]", "[[2]]", "[[3]]", "[[4]]", "[[5]]"]
         },
-        'huggingface_token': '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',
-        # 'huggingface_token': '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'
+        'huggingface_token': '',
+        # 'huggingface_token': ''
         'train_path': 's3://anlp/train_split.jsonl',
         'valid_path': 's3://anlp/validation_split.jsonl',
         'output_dir': '/opt/ml/model',  # Default SageMaker model output directory
@@ -109,7 +109,7 @@ def load_config():
     #     'classifier_config': {
     #         'label_tokens': ["[[1]]", "[[2]]", "[[3]]", "[[4]]", "[[5]]"]
     #     },
-    #     'huggingface_token': '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',
+    #     'huggingface_token': '',
     #     'train_path': 's3://anlp/train_split.jsonl',
     #     'valid_path': 's3://anlp/validation_split.jsonl',
     #     'output_dir': '/opt/ml/model',
