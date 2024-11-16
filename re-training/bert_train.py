@@ -75,7 +75,7 @@ def main():
     learning_rate = 1e-5
     weight_decay = 0.01
     total_steps = 2000
-    data_file = "preference_data.jsonl"  # Your data file path
+    data_file = "train_data.jsonl" 
     
     # Device configuration
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
